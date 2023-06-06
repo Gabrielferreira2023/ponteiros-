@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    int num1, num2;
+    int *ptr1, *ptr2;
+
+    printf("Digite o valor para num1: ");
+    scanf("%d", &num1);
+
+    printf("Digite o valor para num2: ");
+    scanf("%d", &num2);
+
+    ptr1 = &num1;
+    ptr2 = &num2;
+  
+    if (*ptr1 > *ptr2) {
+        printf("Conteúdo do maior endereço: %d\n", *ptr1);
+    } else {
+        printf("Conteúdo do maior endereço: %d\n", *ptr2);
+    }
+
+    return 0;
+}
+
