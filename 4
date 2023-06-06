@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+void trocarValores(int *ptrNum1, int *ptrNum2) {
+    if (*ptrNum1 < *ptrNum2) {
+        int temp = *ptrNum1;
+        *ptrNum1 = *ptrNum2;
+        *ptrNum2 = temp;
+    }
+}
+
+int main() {
+    int num1, num2;
+
+    printf("Digite o primeiro valor: ");
+    scanf("%d", &num1);
+
+    printf("Digite o segundo valor: ");
+    scanf("%d", &num2);
+
+    trocarValores(&num1, &num2);
+
+    printf("Maior valor: %d\n", num1);
+    printf("Menor valor: %d\n", num2);
+
+    return 0;
+}
