@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+void calcularSoma(int *ptrA, int B) {
+    *ptrA = *ptrA + B;
+}
+
+int main() {
+    int numA, numB;
+
+    printf("Digite o valor de A: ");
+    scanf("%d", &numA);
+
+    printf("Digite o valor de B: ");
+    scanf("%d", &numB);
+
+    calcularSoma(&numA, numB);
+
+    printf("Valor de A: %d\n", numA);
+    printf("Valor de B: %d\n", numB);
+
+    return 0;
+}
